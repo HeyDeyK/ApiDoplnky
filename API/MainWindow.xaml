@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:API"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="Přihlášení" Height="350" Width="525">
+    <Canvas>
+
+        <TextBlock TextWrapping="Wrap" Text="Email" Canvas.Left="247" Canvas.Top="58" FontWeight="Bold" FontSize="22"/>
+        <TextBox Text="viletacek@seznam.cz" x:Name="txtEmail" Height="36" Canvas.Left="190" TextWrapping="Wrap"  Canvas.Top="89" Width="180"/>
+        <TextBlock TextWrapping="Wrap" Text="Heslo" Canvas.Left="247" Canvas.Top="140" FontWeight="Bold" FontSize="22"/>
+        <PasswordBox x:Name="txtHeslo" Height="36" Canvas.Left="189" Canvas.Top="171" Width="180"></PasswordBox>
+        <Button Content="Button" Canvas.Left="238" Canvas.Top="225" Width="75" Click="Button_Click"/>
+
+
+    </Canvas>
 </Window>
